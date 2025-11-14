@@ -1,7 +1,7 @@
 Config = {}
 
 -- Discord Webhook
-Config.Webhook = "https://discord.com/api/webhooks/1438879359103664239/acJQmIPcdOogv2PIW9K1p0n5-VQy6P7pAbCzODoHvsoc_nZkBoXYCvEzTtjUnu8NRuEa"
+Config.Webhook = "YOUR_WEBHOOK"
 
 -- Rapor gönderme aralığı (5 dakika)
 -- Test için 10000 yapabilirsin, prod için 300000 kullan
@@ -44,3 +44,4 @@ Config.Trend = {
 
 -- Konsol debug modu
 Config.Debug = false
+
