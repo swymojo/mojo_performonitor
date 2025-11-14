@@ -18,6 +18,23 @@ perf:MOJO_USE(“SomeSection”, GetGameTimer() - t0)
 
 Otherwise, you will only capture superficial numbers that resemble each other with averages. The code above enables pinpoint detection and target capture. It is recommended for critical projects. Otherwise, it won't have much of an effect.
 
+Installation:
+
+1) Make sure to start the script by placing mojo_performonitor in any of the folders you specified in the resource file.
+2) The mojo_injection.lua file in the folder is your reporting tool. Place it in the client folder within the script you want to report on. Create it if it doesn't exist.
+3) In the Fxmanifest file, ensure the following sections are present:
+client_scripts {
+    ‘client/mojo_inject.lua’
+}
+
+and
+
+dependencies {
+    ‘mojo_performonitor ’
+}
+
+If not added to dependencies and client_scripts, it will not work because it actively retrieves data.
+
 <img width="500" height="673" alt="image" src="https://github.com/user-attachments/assets/8e98e4ef-9f63-4442-8719-14f0c3b2267d" /> <img width="500" height="673" alt="image" src="https://github.com/user-attachments/assets/c70353a9-0ffe-47a4-aa23-ad406aa3f1eb" /> <img width="500" height="673" alt="image" src="https://github.com/user-attachments/assets/477e8e09-65a3-44e2-ad3a-8f74f2faa105" />
 
 
